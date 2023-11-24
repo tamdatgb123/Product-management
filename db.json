@@ -1,0 +1,83 @@
+{
+    "user": [
+        {
+            "id": 1,
+            "role": "admin",
+            "username": "admin",
+            "password": "admin@123",
+            "name": "Admin"
+        },
+        {
+            "id": 2,
+            "role": "user",
+            "username": "nguyenvana",
+            "password": "nguyenvana@123",
+            "name": "Nguyen Van A"
+        },
+        {
+            "id": 3,
+            "role": "user",
+            "username": "tranvanb",
+            "password": "tranvanb@123",
+            "name": "Tran Van B"
+        }
+    ],
+    "products": [
+        {
+            "id": 1,
+            "images": "https://down-vn.img.susercontent.com/file/916e25a4ebe9cdd2031e07e0e6d4fbee",
+            "name": "Bàn Phím Cơ Blue Switch MOFII Candy M Chính Hãng Đa Màu Sắc",
+            "price": "719000",
+            "city": "TP.Ho Chi Minh",
+            "owner_id": "2"
+        },
+        {
+            "id": 2,
+            "images": "https://down-vn.img.susercontent.com/file/916e25a4ebe9cdd2031e07e0e6d4fbee",
+            "name": "Bàn Phím Cơ Blue Switch MOFII Candy M Chính Hãng Đa Màu Sắc",
+            "price": "719000",
+            "city": "TP.Ho Chi Minh",
+            "owner_id": "3"
+        },
+        {
+            "id": 3,
+            "images": "https://down-vn.img.susercontent.com/file/916e25a4ebe9cdd2031e07e0e6d4fbee",
+            "name": "Bàn Phím Cơ Blue Switch MOFII Candy M Chính Hãng Đa Màu Sắc",
+            "price": "719000",
+            "city": "TP.Ho Chi Minh",
+            "owner_id": "2"
+        },
+        {
+            "id": 4,
+            "images": "https://down-vn.img.susercontent.com/file/916e25a4ebe9cdd2031e07e0e6d4fbee",
+            "name": "Bàn Phím Cơ Blue Switch MOFII Candy M Chính Hãng Đa Màu Sắc",
+            "price": "719000",
+            "city": "TP.Ho Chi Minh",
+            "owner_id": "3"
+        },
+        {
+            "id": 5,
+            "images": "https://down-vn.img.susercontent.com/file/916e25a4ebe9cdd2031e07e0e6d4fbee",
+            "name": "Bàn Phím Cơ Blue Switch MOFII Candy M Chính Hãng Đa Màu Sắc",
+            "price": "719000",
+            "city": "TP.Ho Chi Minh",
+            "owner_id": "2"
+        },
+        {
+            "id": 6,
+            "images": "https://down-vn.img.susercontent.com/file/916e25a4ebe9cdd2031e07e0e6d4fbee",
+            "name": "Bàn Phím Cơ Blue Switch MOFII Candy M Chính Hãng Đa Màu Sắc",
+            "price": "719000",
+            "city": "TP.Ho Chi Minh",
+            "owner_id": "2"
+        },
+        {
+            "id": 7,
+            "images": "https://down-vn.img.susercontent.com/file/916e25a4ebe9cdd2031e07e0e6d4fbee",
+            "name": "Bàn Phím Cơ Blue Switch MOFII Candy M Chính Hãng Đa Màu Sắc",
+            "price": "719000",
+            "city": "TP.Ho Chi Minh",
+            "owner_id": "2"
+        }
+    ]
+}
