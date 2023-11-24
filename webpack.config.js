@@ -10,19 +10,37 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.js$/, 
+        test: /\.(js|jsx)$/, 
         exclude: /node_modules/, 
         use: ["babel-loader"]
       },
       {
-        test: /\.css$/, 
-        use: ["style-loader", "css-loader"]
+        test: /\.css$/i,
+        include: path.resolve(__dirname, 'src'),
+        use: ['style-loader', 'css-loader', 'postcss-loader'],
       }
     ]
+  },
+  resolve: {
+    extensions: [".*,", ".js", ".jsx"],
+  },
+  output: {
+    path: path.resolve(__dirname, "./dist"),
+    filename: "main.js",
   },
   plugins: [
     new HtmlWebpackPlugin({
         template: "./public/index.html"
     })
-  ]
+  ],
+  devServer: {
+    static: {
+      directory: path.join(__dirname, "build"),
+    },
+    port: 3000,
+    open: true,
+    hot: true,
+    compress: true,
+    historyApiFallback: true,
+  },
 };
