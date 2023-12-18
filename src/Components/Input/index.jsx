@@ -21,7 +21,7 @@ const Input = ({
         setIsShow(!isShow);
     };
     return (
-        <div className="p-2">
+        <div className="w-full">
             <div className="">
                 <label className="font-medium">{label}{require && <span className="text-red-500 px-1">*</span>}</label>
             </div>
@@ -51,9 +51,10 @@ const Input = ({
                     </div>
                 )}
             </div>
-            <div className="text-red-500 h-4">
+            {textError && 
+            <div className="text-red-500 h-fit">
                 {textError}
-            </div>
+            </div>}
         </div>
         
     )

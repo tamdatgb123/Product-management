@@ -1,83 +1,218 @@
 {
+  "data": {
     "user": [
-        {
-            "id": 1,
-            "role": "admin",
-            "username": "admin",
-            "password": "admin@123",
-            "name": "Admin"
-        },
-        {
-            "id": 2,
-            "role": "user",
-            "username": "nguyenvana",
-            "password": "nguyenvana@123",
-            "name": "Nguyen Van A"
-        },
-        {
-            "id": 3,
-            "role": "user",
-            "username": "tranvanb",
-            "password": "tranvanb@123",
-            "name": "Tran Van B"
-        }
+      {
+        "id": 1,
+        "role": "admin",
+        "email": "admin@gmail.com",
+        "username": "admin",
+        "password": "admin@123",
+        "name": "Admin"
+      },
+      {
+        "id": 2,
+        "role": "user",
+        "email": "nguyenvana@gmail.com",
+        "username": "nguyenvana",
+        "password": "nguyenvana@123",
+        "name": "Nguyen Van A"
+      },
+      {
+        "id": 3,
+        "role": "user",
+        "email": "tranvanb@gmail.com",
+        "username": "tranvanb",
+        "password": "tranvanb@123",
+        "name": "Tran Van B"
+      }
     ],
     "products": [
-        {
-            "id": 1,
-            "images": "https://down-vn.img.susercontent.com/file/916e25a4ebe9cdd2031e07e0e6d4fbee",
-            "name": "Bàn Phím Cơ Blue Switch MOFII Candy M Chính Hãng Đa Màu Sắc",
-            "price": "719000",
-            "city": "TP.Ho Chi Minh",
-            "owner_id": "2"
+      {
+        "id": "Ddjc1",
+        "images": "https://down-vn.img.susercontent.com/file/916e25a4ebe9cdd2031e07e0e6d4fbee",
+        "name": "Bàn Phím Cơ Blue Switch MOFII Candy M Chính Hãng Đa Màu Sắc",
+        "price": "719000",
+        "city": "TP.Ho Chi Minh",
+        "owner_id": "2"
+      },
+      {
+        "id": "ieuaNdhr",
+        "images": "https://down-vn.img.susercontent.com/file/54c9bb9c9706ba622136bc9558ead3c6",
+        "name": "Bàn phím Mini K1000/XYD 918 USB - Full Box- Chất Lượng Tốt, Kiểu Dáng Nhỏ Gọn, Bảo Hành 6 Tháng",
+        "price": "71900",
+        "city": "TP.Ho Chi Minh",
+        "owner_id": "2"
+      },
+      {
+        "id": "aAskalw",
+        "images": "https://down-vn.img.susercontent.com/file/9dce7c8f91e32310267f59511e6b7d5f",
+        "name": "Bàn phím cơ Gaming Coputa Bàn phím máy tính chơi game có dây LED RGB K100",
+        "price": "465000",
+        "city": "TP.Ho Chi Minh",
+        "owner_id": "3"
+      },
+      {
+        "id": "oriawNal",
+        "images": "https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lgdjs7ykpl2v68",
+        "name": "Bàn phím cơ ATAS ZA981 98 Key - Có Hotswap - Red switch - Có nút điều chỉnh độ sáng - LED 9 chế độ",
+        "price": "429000",
+        "city": "TP.Ho Chi Minh",
+        "owner_id": "2"
+      },
+      {
+        "id": "oopvEaW",
+        "images": "https://down-vn.img.susercontent.com/file/vn-11134201-7qukw-lkajqwod5k0s63",
+        "name": "Bàn Phím Gaming K618 Super Pro New 2023 Led Đổi Màu 10 Chế Độ Led Khác Nhau Ngang Phím Cơ PC - XSMART",
+        "price": "399000",
+        "city": "TP.Ho Chi Minh",
+        "owner_id": "2"
+      },
+      {
+        "id": "Kmefvue",
+        "images": "https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lj4ajs50k36405",
+        "name": "Bàn phím cơ fullsize K3MAX cấu trúc gasket có hotswap 19 chế độ led rainbow chuyên dùng chơi game, thao tác văn phòng",
+        "price": "489000",
+        "city": "TP.Ho Chi Minh",
+        "owner_id": "2"
+      },
+      {
+        "id": "akjsu",
+        "images": "https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lj4ajs50k36405",
+        "name": "Bàn Phím Cơ Máy Tính Gaming K550 Pro Full Led 7 Chế Độ Hiêu Ứng",
+        "price": "360000",
+        "city": "Ha Noi",
+        "owner_id": "3"
+      },
+      {
+        "id": "Kononoa",
+        "images": "https://down-vn.img.susercontent.com/file/d85895470246fc6464575ed4f315d253",
+        "name": "Bàn Phím Cơ Máy Tính Gaming K550 Pro Full Led 7 Chế Độ Hiêu Ứng",
+        "price": "340000",
+        "city": "Ha Noi",
+        "owner_id": "3"
+      },
+      {
+        "id": "kliro",
+        "images": "https://down-vn.img.susercontent.com/file/vn-11134201-23030-t8bw44y3ibov1c",
+        "name": "Sỉ 260k Bàn phím cơ K2 Pro Crack bản nâng cấp 2023 led RGB, 10 chế độ nháy dành cho máy tính, laptop chơi game cực đã",
+        "price": "325000",
+        "city": "Ha Noi",
+        "owner_id": "3"
+      }
+    ],
+    "order": [
+      {
+        "_id": "1",
+        "user_id": "2",
+        "cart": {
+          "0": {
+            "id": "Kmefvue",
+            "quantity": 1
+          },
+          "1": {
+            "id": "oriawNal",
+            "quantity": 1
+          }
         },
-        {
-            "id": 2,
-            "images": "https://down-vn.img.susercontent.com/file/916e25a4ebe9cdd2031e07e0e6d4fbee",
-            "name": "Bàn Phím Cơ Blue Switch MOFII Candy M Chính Hãng Đa Màu Sắc",
-            "price": "719000",
-            "city": "TP.Ho Chi Minh",
-            "owner_id": "3"
+        "status": "finish",
+        "order_day": "12/12/2023",
+        "fullname": "Dat Huynh",
+        "phone": "0913599233",
+        "address": "65 thon 6, Hoa Tan, Krong Bong",
+        "type_address": "Home"
+      },
+      {
+        "_id": "2",
+        "user_id": "2",
+        "cart": {
+          "0": {
+            "id": "aAskalw",
+            "quantity": 1
+          },
+          "1": {
+            "id": "oriawNal",
+            "quantity": 1
+          }
         },
-        {
-            "id": 3,
-            "images": "https://down-vn.img.susercontent.com/file/916e25a4ebe9cdd2031e07e0e6d4fbee",
-            "name": "Bàn Phím Cơ Blue Switch MOFII Candy M Chính Hãng Đa Màu Sắc",
-            "price": "719000",
-            "city": "TP.Ho Chi Minh",
-            "owner_id": "2"
+        "status": "finish",
+        "order_day": "14/12/2023",
+        "fullname": "Dat Huynh",
+        "phone": "0913599233",
+        "address": "65 thon 6, Hoa Tan, Krong Bong",
+        "type_address": "Home"
+      },
+      {
+        "_id": "3",
+        "user_id": "U2FsdGVkX1/vbjB1Ru0gm8qX5V5eXQUMJso8oPeg0t10jpsuKeX0y547p96QB8h6",
+        "cart": {
+          "0": {
+            "id": "aAskalw",
+            "quantity": 4
+          }
         },
-        {
-            "id": 4,
-            "images": "https://down-vn.img.susercontent.com/file/916e25a4ebe9cdd2031e07e0e6d4fbee",
-            "name": "Bàn Phím Cơ Blue Switch MOFII Candy M Chính Hãng Đa Màu Sắc",
-            "price": "719000",
-            "city": "TP.Ho Chi Minh",
-            "owner_id": "3"
+        "status": "waiting",
+        "order_day": "17/12/2023",
+        "fullname": "Dat Huynh",
+        "phone": "0913599233",
+        "address": "65 thon 6, Hoa Tan, Krong Bong",
+        "type_address": "Home"
+      },
+      {
+        "_id": "4",
+        "user_id": "2",
+        "cart": {
+          "0": {
+            "id": "aAskalw",
+            "quantity": 3
+          },
+          "1": {
+            "id": "oriawNal",
+            "quantity": 2
+          }
         },
-        {
-            "id": 5,
-            "images": "https://down-vn.img.susercontent.com/file/916e25a4ebe9cdd2031e07e0e6d4fbee",
-            "name": "Bàn Phím Cơ Blue Switch MOFII Candy M Chính Hãng Đa Màu Sắc",
-            "price": "719000",
-            "city": "TP.Ho Chi Minh",
-            "owner_id": "2"
+        "status": "waiting",
+        "order_day": "18/12/2023",
+        "fullname": "Dat Huynh",
+        "phone": "0913599233",
+        "address": "65 thon 6, Hoa Tan, Krong Bong",
+        "type_address": "Home"
+      },
+      {
+        "_id": "5",
+        "user_id": "2",
+        "cart": {
+          "0": {
+            "id": "aAskalw",
+            "quantity": 9
+          },
+          "1": {
+            "id": "oriawNal",
+            "quantity": 6
+          }
         },
-        {
-            "id": 6,
-            "images": "https://down-vn.img.susercontent.com/file/916e25a4ebe9cdd2031e07e0e6d4fbee",
-            "name": "Bàn Phím Cơ Blue Switch MOFII Candy M Chính Hãng Đa Màu Sắc",
-            "price": "719000",
-            "city": "TP.Ho Chi Minh",
-            "owner_id": "2"
+        "status": "waiting",
+        "order_day": "18/12/2023",
+        "fullname": "Dat Huynh",
+        "phone": "0913599233",
+        "address": "65 thon 676767, Hoa Tan, Krong Bong",
+        "type_address": "Home"
+      },
+      {
+        "_id": "6",
+        "user_id": "2",
+        "cart": {
+          "0": {
+            "id": "aAskalw",
+            "quantity": 1
+          }
         },
-        {
-            "id": 7,
-            "images": "https://down-vn.img.susercontent.com/file/916e25a4ebe9cdd2031e07e0e6d4fbee",
-            "name": "Bàn Phím Cơ Blue Switch MOFII Candy M Chính Hãng Đa Màu Sắc",
-            "price": "719000",
-            "city": "TP.Ho Chi Minh",
-            "owner_id": "2"
-        }
+        "status": "waiting",
+        "order_day": "18/12/2023",
+        "fullname": "Dat Huynh",
+        "phone": "0903456456",
+        "address": "65 thôn 6, xã Hòa Tân, huyện Krông Bông, tỉnh Đăk Lăk",
+        "type_address": "home"
+      }
     ]
+  }
 }
