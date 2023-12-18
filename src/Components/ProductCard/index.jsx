@@ -2,7 +2,7 @@ import React from "react";
 
 const ProductCard = ({ images, name, price, city }) => {
   return (
-    <div className="w-full min-w-[6rem] max-w-[20rem] bg-white shadow rounded-sm gap-4">
+    <div className="w-full min-w-[6rem] max-w-[20rem] bg-white shadow rounded-sm gap-4 hover:scale-105 transition duration-500">
       <div className="w-full h-1/2">
         <img src={images} alt="images" className="rounded-t" />
       </div>

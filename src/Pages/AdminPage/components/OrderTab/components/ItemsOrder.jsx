@@ -16,7 +16,7 @@ const ItemsOrder = ({ data, order }) => {
       (total, product) => total + (product.price ? parseInt(product.price) : 0),
       0
     );
-    setTotal(newTotal)
+    setTotal(newTotal);
 
     setProductList(productsInCart);
   }, [order, data.products]);
@@ -49,8 +49,22 @@ const ItemsOrder = ({ data, order }) => {
       </div>
       <div className="w-full md:flex justify-end items-center p-4 border">
         <div className="text-xl">
-          <div>Total: <span className="text-red-500">{formatNumber(total)}</span></div>
-          <div>Day order: <span>{order.order_day}</span></div>
+          <div>
+            Total: <span className="text-red-500">{formatNumber(total)}</span>
+          </div>
+          {order.status == "waiting" ? (
+            <div>
+              Day order: <span>{order.order_day}</span>
+            </div>
+          ) : order.status == "delivering" ? (
+            <div>
+              Day delivering: <span>{order.delivering_day}</span>
+            </div>
+          ) : (
+            <div>
+              Day received: <span>{order.finish_day}</span>
+            </div>
+          )}
         </div>
       </div>
     </div>

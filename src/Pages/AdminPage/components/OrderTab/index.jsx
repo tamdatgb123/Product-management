@@ -1,11 +1,13 @@
 import React from "react";
 import UserInformation from "./components/UserInformation";
 import ItemsOrder from "./components/ItemsOrder";
+import { getCurrentDay } from "../../../../utils/getCurrentDay";
 
 const OrderTab = ({data}) => {
+    const currentDay = getCurrentDay();
 
     const handleConfirm = (id) => {
-        const newDataOrder = data.order.map(order => order._id === id ? { ...order, status: "delivering"} : order);
+        const newDataOrder = data.order.map(order => order._id === id ? { ...order, status: "delivering", delivering_day: currentDay} : order);
         const updateData = JSON.stringify({ ...data , order: [...newDataOrder]});
         const fetchData = async () => {
             try {

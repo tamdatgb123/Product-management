@@ -90,6 +90,10 @@ const DetailProductPage = () => {
     }
   }, [id, data]);
 
+  React.useEffect(() => {
+    setQuantity(1);
+  }, [id])
+
   return (
     <>
       <div className="flex justify-center p-4 min-h-screen">
@@ -97,7 +101,11 @@ const DetailProductPage = () => {
           {product ? (
             <div className="relative md:flex gap-4">
               <div className="w-full md:w-96 h-full">
-                <img src={product.images} alt="product_img" className="object-cover rounded" />
+                <img
+                  src={product.images}
+                  alt="product_img"
+                  className="object-cover rounded"
+                />
               </div>
               <div className="flex flex-col justify-between gap-2">
                 <div className="flex flex-col gap-2">
@@ -106,29 +114,29 @@ const DetailProductPage = () => {
                   <div className="text-2xl lg:text-3xl text-red-500">
                     ₫{formatNumber(product.price)}
                   </div>
+                </div>
+                <div className="flex w-fit items-center">
                   <div className="flex w-fit items-center">
-                    <div className="flex w-fit items-center">
-                      <div
-                        className="border border-gray-300 p-0.5 cursor-pointer"
-                        onClick={handleMinus}
-                      >
-                        <div className="w-6">
-                          <MinusIcon />
-                        </div>
+                    <div
+                      className="border border-gray-300 p-0.5 cursor-pointer"
+                      onClick={handleMinus}
+                    >
+                      <div className="w-6">
+                        <MinusIcon />
                       </div>
-                      <Input
-                        type="number"
-                        value={quantity}
-                        className="!w-14 py-0.5 px-2 text-center"
-                        onChange={handleQuantity}
-                      />
-                      <div
-                        className="border border-gray-300 p-0.5 cursor-pointer"
-                        onClick={handlePlus}
-                      >
-                        <div className="w-6">
-                          <PlusIcon />
-                        </div>
+                    </div>
+                    <Input
+                      type="number"
+                      value={quantity}
+                      className="!w-14 py-0.5 px-2 text-center"
+                      onChange={handleQuantity}
+                    />
+                    <div
+                      className="border border-gray-300 p-0.5 cursor-pointer"
+                      onClick={handlePlus}
+                    >
+                      <div className="w-6">
+                        <PlusIcon />
                       </div>
                     </div>
                   </div>

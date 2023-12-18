@@ -4,11 +4,13 @@ import UserInformation from "./components/UserInformation";
 import { useData } from "../../provider/defaultProvider/dataContext";
 import { useAuth } from "../../provider/authProvider";
 import Stepper from "./components/Stepper";
+import { getCurrentDay } from "../../utils/getCurrentDay";
 
 const DeliveryPage = () => {
   const { data } = useData();
   const { id } = useAuth();
   const [orderList, setOrderList] = React.useState([]);
+  const currentDay = getCurrentDay();
 
   React.useEffect(() => {
     if (data) {
@@ -21,7 +23,7 @@ const DeliveryPage = () => {
 
   const handleConfirm = (id) => {
     const newDataOrder = data.order.map((order) =>
-      order._id === id ? { ...order, status: "finish" } : order
+      order._id === id ? { ...order, status: "finish", finish_day: currentDay } : order
     );
     const updateData = JSON.stringify({ ...data, order: [...newDataOrder] });
     const fetchData = async () => {

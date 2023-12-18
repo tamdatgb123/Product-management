@@ -5,7 +5,7 @@ import { formatNumber } from "../../../utils/formatNumber";
 const RecommendProduct = ({ currentId, data, navigate }) => {
   return (
     <>
-      <div className="text-2xl mb-4">Recommend</div>
+      <div className="text-2xl mb-4 font-semibold">Recommend</div>
       <div className="gap-4 grid grid-cols-2 sm:grid-cols-4">
         {data &&
           data.products.filter(product => product.id != currentId).slice(0,4).map((product, index) => (

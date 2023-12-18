@@ -106,20 +106,16 @@
         "user_id": "2",
         "cart": {
           "0": {
-            "id": "Kmefvue",
-            "quantity": 1
-          },
-          "1": {
-            "id": "oriawNal",
+            "id": "Ddjc1",
             "quantity": 1
           }
         },
-        "status": "finish",
-        "order_day": "12/12/2023",
+        "status": "waiting",
+        "order_day": "18/12/2023",
         "fullname": "Dat Huynh",
-        "phone": "0913599233",
-        "address": "65 thon 6, Hoa Tan, Krong Bong",
-        "type_address": "Home"
+        "phone": "0903216162",
+        "address": "14 Hoàng Thế Thiện",
+        "type_address": "office"
       },
       {
         "_id": "2",
@@ -127,91 +123,28 @@
         "cart": {
           "0": {
             "id": "aAskalw",
-            "quantity": 1
-          },
-          "1": {
-            "id": "oriawNal",
-            "quantity": 1
-          }
-        },
-        "status": "finish",
-        "order_day": "14/12/2023",
-        "fullname": "Dat Huynh",
-        "phone": "0913599233",
-        "address": "65 thon 6, Hoa Tan, Krong Bong",
-        "type_address": "Home"
-      },
-      {
-        "_id": "3",
-        "user_id": "U2FsdGVkX1/vbjB1Ru0gm8qX5V5eXQUMJso8oPeg0t10jpsuKeX0y547p96QB8h6",
-        "cart": {
-          "0": {
-            "id": "aAskalw",
-            "quantity": 4
-          }
-        },
-        "status": "waiting",
-        "order_day": "17/12/2023",
-        "fullname": "Dat Huynh",
-        "phone": "0913599233",
-        "address": "65 thon 6, Hoa Tan, Krong Bong",
-        "type_address": "Home"
-      },
-      {
-        "_id": "4",
-        "user_id": "2",
-        "cart": {
-          "0": {
-            "id": "aAskalw",
-            "quantity": 3
+            "quantity": 2
           },
           "1": {
             "id": "oriawNal",
             "quantity": 2
-          }
-        },
-        "status": "waiting",
-        "order_day": "18/12/2023",
-        "fullname": "Dat Huynh",
-        "phone": "0913599233",
-        "address": "65 thon 6, Hoa Tan, Krong Bong",
-        "type_address": "Home"
-      },
-      {
-        "_id": "5",
-        "user_id": "2",
-        "cart": {
-          "0": {
-            "id": "aAskalw",
-            "quantity": 9
           },
-          "1": {
-            "id": "oriawNal",
-            "quantity": 6
-          }
-        },
-        "status": "waiting",
-        "order_day": "18/12/2023",
-        "fullname": "Dat Huynh",
-        "phone": "0913599233",
-        "address": "65 thon 676767, Hoa Tan, Krong Bong",
-        "type_address": "Home"
-      },
-      {
-        "_id": "6",
-        "user_id": "2",
-        "cart": {
-          "0": {
-            "id": "aAskalw",
+          "2": {
+            "id": "oopvEaW",
+            "quantity": 2
+          },
+          "3": {
+            "id": "Ddjc1",
             "quantity": 1
           }
         },
-        "status": "waiting",
+        "status": "delivering",
         "order_day": "18/12/2023",
         "fullname": "Dat Huynh",
-        "phone": "0903456456",
+        "phone": "0903592238778",
         "address": "65 thôn 6, xã Hòa Tân, huyện Krông Bông, tỉnh Đăk Lăk",
-        "type_address": "home"
+        "type_address": "home",
+        "delivering_day": "18/12/2023"
       }
     ]
   }

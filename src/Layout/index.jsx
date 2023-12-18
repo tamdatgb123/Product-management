@@ -4,7 +4,7 @@ import Footer from "./Components/Footer";
 
 const Layout = ({ children }) => {
   return (
-    <div className="h-screen">
+    <div>
       <Header />
       <React.Fragment>{children}</React.Fragment>
       <Footer />

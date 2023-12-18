@@ -1,6 +1,6 @@
 import React from "react";
-import Input from "../../../../Components/Input";
-import Button from "../../../../Components/Button";
+import Input from "../../../Components/Input";
+import Button from "../../../Components/Button";
 
 const FormLocation = ({
     formData = {
